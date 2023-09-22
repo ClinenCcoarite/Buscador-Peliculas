@@ -15,6 +15,14 @@
     margin: auto;
     gap: 1em;
 }
+.github{
+    font-size: 2rem;
+    text-decoration: none;
+    text-align: center;
+}
+.github p{
+    font-size: 20px;
+}
 header,h1{
     text-align:center;
     margin: 15px;

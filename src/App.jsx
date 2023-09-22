@@ -4,6 +4,7 @@ import { useSearch } from './customHook/consulting'
 import { FormMovies } from './FormMovies'
 import { MovieDetail } from './route/MovieDetail'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { Githublink } from './Githublink'
 
 function App() {
   const { data, resolve } = useSearch()
@@ -11,6 +12,7 @@ function App() {
   return (
     <div className='container'>
       <BrowserRouter>
+        <Githublink/>
         <FormMovies data={data} />
         <Routes>
           <Route path='/' element={<Movies resolve={resolve} />} />
